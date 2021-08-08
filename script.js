@@ -14,7 +14,7 @@ async function fetchData() {
                 await file.remove();
                 console.log(`successfully deleted ${file.filename}`);
             } catch(err) {
-                console.log(`error while deleting file ${err}`);
+                console.log(`error while deleting file ${err} `);
             }
         }
     }
