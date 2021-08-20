@@ -10,7 +10,4 @@ function connectDB() {
         console.log('Connection failed ☹️☹️☹️☹️');
     });
 }
-
-// mIAY0a6u1ByJsWWZ
-
 module.exports = connectDB;

@@ -18,7 +18,7 @@ const corsOptions = {
 //     "optionsSuccessStatus": 204
 //   }
 
-app.use(cors(corsOptions))
+app.use(cors(corsOptions));
 app.use(express.static('public'));
 
 const connectDB = require('./config/db');
@@ -26,6 +26,7 @@ connectDB();
 
 app.use(express.json());
 
+// Template engine
 app.set('views', path.join(__dirname, '/views'));
 app.set('view engine', 'ejs');
 
