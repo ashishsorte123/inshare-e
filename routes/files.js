@@ -39,6 +39,9 @@ router.post('/', (req, res) => {
 
 
 router.post('/send', async (req, res) => {
+  // console.log(req.body);
+  // return res.send({});
+
   const { uuid, emailTo, emailFrom } = req.body;
   // Validate request
   if(!uuid || !emailTo || !emailFrom) {
@@ -68,6 +71,6 @@ router.post('/send', async (req, res) => {
         expires: '24 hours'
       })
     });
-    return res.send({ success: 'true' });
+    return res.send({ success: true });
 });
 module.exports = router;
